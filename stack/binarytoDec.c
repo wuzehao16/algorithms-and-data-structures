@@ -57,7 +57,7 @@ int main()
     sqStack s;
     int len, i , sum = 0;
     InitStack(&s);
-    printf("ÇëÊäÈë¶ş½øÖÆÊä£¬ÊäÈë#·ûºÅ±íÊ¾½áÊø£¡\n");
+    printf("è¯·è¾“å…¥äºŒè¿›åˆ¶è¾“ï¼Œè¾“å…¥#ç¬¦å·è¡¨ç¤ºç»“æŸï¼\n");
     scanf("%c",&c);
     while(c != '#')
     {
@@ -65,17 +65,15 @@ int main()
         Push(&s, c);
         scanf("%c",&c);
     }
-    getchar(); //°Ñ'\n'´Ó»º³åÇøÈ¥µô
+    getchar(); //æŠŠ'\n'ä»ç¼“å†²åŒºå»æ‰
 
     len = StackLen(s);
-    printf("Õ»µÄµ±Ç°ÈİÁ¿ÊÇ£º%d\n", len);
+    printf("æ ˆçš„å½“å‰å®¹é‡æ˜¯ï¼š%d\n", len);
     for( i= 0; i< len; i++)
     {
         Pop(&s,&c);
         sum = sum + (c - 48) * pow(2, i);
     }
-    printf("×ª»¯ÎªÊ®½øÖÆÊäÎª£º%d\n", sum);
+    printf("è½¬åŒ–ä¸ºåè¿›åˆ¶è¾“ä¸ºï¼š%d\n", sum);
     return 0;
 }
-
-
