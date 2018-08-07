@@ -110,7 +110,7 @@ int main()
       }
       else
       {
-        printf("�û�������ʽ������:%s\n",c);
+        printf("�û�������ʽ������\n",c);
         return -1;
       }
       scanf("%c", &c);
